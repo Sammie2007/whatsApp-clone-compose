@@ -14,6 +14,7 @@ jobs:
         
     - name: Build App
       run: |
+        echo "STREAM_API_KEY=rfp5ff7xygtz" > secrets.properties
         chmod +x gradlew
         ./gradlew assembleDebug
         
